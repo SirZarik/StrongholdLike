@@ -1,0 +1,95 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'design.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("StrongholdLike")
+        MainWindow.resize(1149, 899)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Maximum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
+        MainWindow.setSizePolicy(sizePolicy)
+        MainWindow.setMinimumSize(QtCore.QSize(0, 0))
+        MainWindow.setMaximumSize(QtCore.QSize(1149, 899))
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.layoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.layoutWidget.setGeometry(QtCore.QRect(320, 40, 761, 751))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.layoutWidget)
+        self.gridLayout.setSizeConstraint(QtWidgets.QLayout.SetMinimumSize)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setSpacing(0)
+        self.gridLayout.setObjectName("gridLayout")
+        self.info_display = QtWidgets.QLabel(self.centralwidget)
+        self.info_display.setGeometry(QtCore.QRect(40, 40, 221, 410))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.info_display.sizePolicy().hasHeightForWidth())
+        self.info_display.setSizePolicy(sizePolicy)
+        self.info_display.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.info_display.setObjectName("info_display")
+        self.year_lbl = QtWidgets.QLabel(self.centralwidget)
+        self.year_lbl.setGeometry(QtCore.QRect(1020, 10, 61, 21))
+        self.year_lbl.setObjectName("year")
+        self.resources = QtWidgets.QLabel(self.centralwidget)
+        self.resources.setGeometry(QtCore.QRect(320, 10, 91, 16))
+        self.resources.setObjectName("resources")
+        self.resources_2 = QtWidgets.QLabel(self.centralwidget)
+        self.resources_2.setGeometry(QtCore.QRect(410, 10, 91, 16))
+        self.resources_2.setObjectName("resources_2")
+        self.resources_3 = QtWidgets.QLabel(self.centralwidget)
+        self.resources_3.setGeometry(QtCore.QRect(510, 10, 91, 16))
+        self.resources_3.setObjectName("resources_3")
+        self.resources_4 = QtWidgets.QLabel(self.centralwidget)
+        self.resources_4.setGeometry(QtCore.QRect(600, 10, 91, 16))
+        self.resources_4.setObjectName("resources_4")
+        self.resources_5 = QtWidgets.QLabel(self.centralwidget)
+        self.resources_5.setGeometry(QtCore.QRect(690, 10, 91, 16))
+        self.resources_5.setObjectName("resources_5")
+        self.anger_level = QtWidgets.QProgressBar(self.centralwidget)
+        self.anger_level.setEnabled(True)
+        self.anger_level.setGeometry(QtCore.QRect(455, 857, 211, 21))
+        self.anger_level.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.anger_level.setProperty("value", 0)
+        self.anger_level.setTextVisible(True)
+        self.anger_level.setOrientation(QtCore.Qt.Horizontal)
+        self.anger_level.setTextDirection(QtWidgets.QProgressBar.TopToBottom)
+        self.anger_level.setObjectName("anger_level")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(330, 850, 131, 31))
+        self.label.setObjectName("label")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1149, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "StrongholdLike"))
+        self.info_display.setText(_translate("MainWindow", "<b>Информация:</b>"))
+        self.year_lbl.setText(_translate("MainWindow", "Год:"))
+        self.resources.setText(_translate("MainWindow", "Деньги:"))
+        self.resources_2.setText(_translate("MainWindow", "Население:"))
+        self.resources_3.setText(_translate("MainWindow", "Еда:"))
+        self.resources_4.setText(_translate("MainWindow", "Дерево:"))
+        self.resources_5.setText(_translate("MainWindow", "Камень:"))
+        self.label.setText(_translate("MainWindow", "Недовольство народа:"))
